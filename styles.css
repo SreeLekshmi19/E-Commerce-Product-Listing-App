@@ -129,6 +129,12 @@ body {
     }
 }
 
+#search{
+    display: none;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
 @media (max-width: 480px) {
     #card-container {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));

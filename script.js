@@ -1,5 +1,6 @@
 const cardContainer = document.getElementById("card-container");
 const load = document.getElementById("loading");
+const search = document.getElementById("search");
 
 window.addEventListener('DOMContentLoaded', () => {
     fetch("https://fakestoreapi.com/products")
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 });
                 cardContainer.innerHTML = card;
                 load.style.display = "none";
+                search.style.display = "inline-block"
             }, 2000)
         })
 })
