@@ -89,7 +89,7 @@ body {
 /* Details section */
 .details {
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .details h3 {
