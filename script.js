@@ -1,6 +1,7 @@
 const cardContainer = document.getElementById("card-container");
 const load = document.getElementById("loading");
 const search = document.getElementById("search");
+const btn = document.getElementById("btn");
 
 window.addEventListener('DOMContentLoaded', () => {
     fetch("https://fakestoreapi.com/products")
@@ -26,6 +27,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 cardContainer.innerHTML = card;
                 load.style.display = "none";
                 search.style.display = "inline-block"
+                btn.style.display = "inline-block"
             }, 2000)
-        })
+
+            btn.addEventListener('click', () => {
+                data.forEach(ele => {
+                    if (ele.title.includes(search.value)){
+                        
+                    }
+                })
+            })
+        });
 })
