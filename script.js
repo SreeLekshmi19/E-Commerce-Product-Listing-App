@@ -11,18 +11,18 @@ window.addEventListener('DOMContentLoaded', () => {
                 let card = "";
                 data.forEach(ele => {
                     card += `<div class="card">
-                <div class="image">
-                    <img src="${ele.image}" id="img" alt="${ele.title}">
-                    <div class="rating">
-                        <p id="rating">⭐${ele.rating.rate}</p>
-                    </div>
-                </div>
-                <div class="details">
-                    <h3 id="title">${ele.title}</h3>
-                    <p id="desc">${ele.description}</p>
-                    <p id="price">$${ele.price}</p>
-                </div>
-            </div>`;
+                                <div class="image">
+                                    <img src="${ele.image}" id="img" alt="${ele.title}">
+                                        <div class="rating">
+                                            <p id="rating">⭐${ele.rating.rate}</p>
+                                        </div>
+                                </div>
+                                <div class="details">
+                                    <h3 id="title">${ele.title}</h3>
+                                    <p id="desc">${ele.description}</p>
+                                    <p id="price">$${ele.price}</p>
+                                </div>
+                            </div>`;
                 });
                 cardContainer.innerHTML = card;
                 load.style.display = "none";
