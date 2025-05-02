@@ -30,6 +30,10 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 - Clicking the cart icon on a product adds it to the cart list.
 - The mobile hamburger menu toggles visibility of controls on smaller screens.
 
+## 🌐 Live Demo
+
+🔗 [Visit the site](https://air-cast.netlify.app/)
+
 ## 🚀 Getting Started
 
 **Clone the repository**
