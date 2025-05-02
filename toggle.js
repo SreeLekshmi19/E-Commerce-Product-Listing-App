@@ -1,6 +1,20 @@
 const menuToggle = document.getElementById("menu-toggle");
 const mobileControls = document.getElementById("mobile-controls");
 
+function handleResponsiveControls() {
+    if (window.innerWidth <= 768) {
+        mobileControls.classList.add("hidden");
+    } else {
+        mobileControls.classList.remove("hidden");
+    }
+}
+
+handleResponsiveControls();
+
+window.addEventListener("resize", handleResponsiveControls);
+
 menuToggle.addEventListener("click", () => {
-    mobileControls.classList.toggle("hidden");
+    if (window.innerWidth <= 768) {
+        mobileControls.classList.toggle("hidden");
+    }
 });
