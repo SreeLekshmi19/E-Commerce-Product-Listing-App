@@ -1,7 +1,7 @@
-/* Import Google Font */
+/* Google Fonts & Icons */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
-/* Reset some default styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,30 +19,69 @@ body {
     padding: 20px;
 }
 
-/* Container for loading text and card grid */
 .container {
     text-align: center;
     width: 90%;
     max-width: 1200px;
 }
 
-/* Loading text */
-.container > div {
+#loading {
     font-size: 1em;
     color: #555;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-/* Card container */
+/* Search Bar */
+.search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search {
+    display: none;
+    padding: 8px 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#search:focus {
+    border-color: #28a745;
+}
+
+#btn {
+    display: none;
+    padding: 8px 14px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+i{
+    color: white;
+}
+
+#btn:hover {
+    background-color: #218838;
+}
+
+/* Card Grid */
 #card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-/* Product card */
+/* Product Card */
 .card {
     background-color: #fff;
     border-radius: 12px;
@@ -54,9 +93,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.4s ease-in;
 }
 
-/* Image section */
 .image {
     width: 100%;
     display: flex;
@@ -73,7 +112,10 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Rating section */
+.image img:hover {
+    transform: scale(1.05);
+}
+
 .rating {
     position: absolute;
     top: 15px;
@@ -86,7 +128,6 @@ body {
     color: #222;
 }
 
-/* Details section */
 .details {
     padding: 15px;
     text-align: left;
@@ -112,32 +153,23 @@ body {
     font-weight: bold;
 }
 
-/* Hover effect */
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.image img:hover {
-    transform: scale(1.05);
+/* No Products Found Styling */
+#card-container p {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
     #card-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-}
-
-#search{
-    display: none;
-    padding-inline: 10px;
-    padding-block: 5px;
-}
-
-#btn{
-    display: none;
-    padding: 5px;
 }
 
 @media (max-width: 480px) {
@@ -155,5 +187,18 @@ body {
 
     .details p#price {
         font-size: 1.2em;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
