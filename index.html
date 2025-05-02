@@ -4,24 +4,46 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>SmartShop</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div id="loading">Loading...</div>
+    <div id="loading">Loading...</div>
 
-        <div class="search">
-            <input type="search" id="search" placeholder="Search here" value="" />
-            <button id="btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+    <header id="main-header" class="hidden">
+        <div class="header-right">
+            <h1>SmartShop</h1>
         </div>
+        <div class="header-left">
+            <button id="menu-toggle" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="controls hidden" id="mobile-controls">
+                <input type="search" id="search" placeholder="Search products..." />
+                <select id="category">
+                    <option value="all">All Categories</option>
+                </select>
+                <div id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <main>
         <div id="card-container"></div>
+        <div id="no-results" class="hidden">No products found</div>
+    </main>
+
+    <div id="cart-modal" class="hidden">
+        <h3>Cart Items</h3>
+        <ul id="cart-items"></ul>
     </div>
+
     <script src="script.js"></script>
+    <script src="toggle.js"></script>
 </body>
 
 </html>
