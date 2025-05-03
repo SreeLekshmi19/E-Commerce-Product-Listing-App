@@ -243,6 +243,10 @@ body {
         display: block;
     }
 
+    #mobile-controls.visible {
+        display: flex !important;
+    }
+
     #mobile-controls {
         display: none; /* Hide by default on mobile */
     }
