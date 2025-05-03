@@ -32,7 +32,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 ## 🌐 Live Demo
 
-🔗 [Visit the site](https://air-cast.netlify.app/)
+🔗 [Visit the site](https://fetch-cart.netlify.app/)
 
 ## 🚀 Getting Started
 
