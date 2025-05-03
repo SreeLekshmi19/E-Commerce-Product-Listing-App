@@ -1,14 +1,11 @@
 const menuToggle = document.getElementById("menu-toggle");
 const mobileControls = document.getElementById("mobile-controls");
 
-// Function to handle the display of mobile controls based on window size
 function handleResize() {
   if (window.innerWidth > 768) {
-    // Show on desktop
     mobileControls.classList.remove("hidden");
-    mobileControls.classList.add("visible"); // Or block, based on layout
+    mobileControls.classList.add("visible");
   } else {
-    // Hide on mobile (only shown by toggle)
     mobileControls.classList.remove("visible");
     mobileControls.classList.add("hidden");
   }
