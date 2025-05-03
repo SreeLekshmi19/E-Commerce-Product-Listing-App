@@ -5,10 +5,10 @@ function handleResize() {
     if (window.innerWidth > 768) {
         mobileControls.classList.remove("hidden");
         mobileControls.classList.add("visible");
-    } else {
-        mobileControls.classList.remove("visible");
-        // mobileControls.classList.add("hidden");
-    }
+    } //else {
+    //     mobileControls.classList.remove("visible");
+    //     mobileControls.classList.add("hidden");
+    // }
 }
 
 // Initial check
