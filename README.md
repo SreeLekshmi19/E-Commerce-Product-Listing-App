@@ -14,14 +14,14 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
   - On mobile, search, filter, and cart options appear in a dropdown accessible via a hamburger menu.
 - 🎨 **Clean UI**: Organized layout with smooth hover effects and professional styling.
 
-## 🛠️ Tech Stack
+## 🖥️ Tech Stack
 
 - **HTML5**
 - **CSS3** (with responsive design)
 - **Vanilla JavaScript**
 - **[Fake Store API](https://fakestoreapi.com/)**
 
-## 🧠 How It Works
+## 🛠️ How It Works
 
 - Products are fetched from the Fake Store API on page load.
 - Search input filters products if any word matches the title.
@@ -33,7 +33,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 🔗 [Visit the site](https://fetch-cart.netlify.app/)
 
-## 🚀 Getting Started
+## 🤝 Getting Started
 
 **Clone the repository**
    ```bash
