@@ -5,13 +5,8 @@ const mobileControls = document.getElementById("mobile-controls");
 function handleResize() {
   if (window.innerWidth > 768) {
     mobileControls.classList.add("visible");
-  } else {
-    mobileControls.classList.add("hidden");
-    const searchInput = mobileControls.querySelector('input[type="search"]');
-    if (searchInput && mobileControls.classList.contains("visible")) {
-      setTimeout(() => searchInput.focus(), 100);
-    }
-  }
+  } 
+  
 }
 
 // Initial check
