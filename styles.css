@@ -25,13 +25,14 @@ body {
 .hidden {
     display: none !important;
 }
-  
-  .visible {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  
+
+.visible {
+    display: flex;
+    /* Or block, depending on your layout */
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 /* Header */
 #main-header {
