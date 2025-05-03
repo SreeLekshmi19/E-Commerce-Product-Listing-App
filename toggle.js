@@ -1,6 +1,8 @@
 const menuToggle = document.getElementById("menu-toggle");
 const mobileControls = document.getElementById("mobile-controls");
 
+mobileControls.classList.toggle("hidden");
+
 menuToggle.addEventListener("click", () => {
   if (window.innerWidth <= 768) {
     mobileControls.classList.toggle("hidden");
