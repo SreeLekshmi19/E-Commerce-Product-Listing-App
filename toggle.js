@@ -8,7 +8,7 @@ function handleResize() {
     mobileControls.classList.add("visible");
   } else {
     mobileControls.classList.add("hidden");
-    mobileControls.classList.remove("visible");
+    mobileControls.classList.add("visible");
   }
 }
 
