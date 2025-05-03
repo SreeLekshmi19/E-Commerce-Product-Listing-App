@@ -4,27 +4,38 @@ const mobileControls = document.getElementById("mobile-controls");
 // Function to handle the display of mobile controls based on window size
 function handleResize() {
   if (window.innerWidth > 768) {
-    mobileControls.style.display = "flex"; // Show controls on larger screens
+    // Show on desktop
+    mobileControls.classList.remove("hidden");
+    mobileControls.classList.add("visible"); // Or block, based on layout
   } else {
-    mobileControls.style.display = "none"; // Hide controls on smaller screens
+    // Hide on mobile (only shown by toggle)
+    mobileControls.classList.remove("visible");
+    mobileControls.classList.add("hidden");
   }
 }
 
-// Initial check for window size
+// Initial check
 handleResize();
-window.addEventListener("resize", handleResize); // Update on resize
 
+// On window resize
+window.addEventListener("resize", handleResize);
+
+// Toggle on mobile
 menuToggle.addEventListener("click", () => {
   if (window.innerWidth <= 768) {
-    const isHidden = mobileControls.style.display === "none" || mobileControls.style.display === "";
-    mobileControls.style.display = isHidden ? "flex" : "none"; // Toggle display
+    const isHidden = mobileControls.classList.contains("hidden");
 
-    // Focus on the search input if controls are shown
     if (isHidden) {
+      mobileControls.classList.remove("hidden");
+      mobileControls.classList.add("visible");
+
       const searchInput = mobileControls.querySelector('input[type="search"]');
       if (searchInput) {
         setTimeout(() => searchInput.focus(), 100);
       }
+    } else {
+      mobileControls.classList.remove("visible");
+      mobileControls.classList.add("hidden");
     }
   }
 });
