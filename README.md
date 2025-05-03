@@ -2,7 +2,7 @@
 
 A sleek and responsive product listing website built using **HTML**, **CSS**, and **JavaScript**. This project features real product data from the [Fake Store API](https://fakestoreapi.com/) and includes dynamic search, category filtering, and a cart system. Designed to be professional and visually appealing, perfect for showcasing on LinkedIn or your portfolio.
 
-## 🔥 Features
+## 🚀 Features
 
 - 🔍 **Search Bar**: Search matches any word in the product title (case-insensitive).
 - 📂 **Category Filter**: View products by selected category.
@@ -14,7 +14,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
   - On mobile, search, filter, and cart options appear in a dropdown accessible via a hamburger menu.
 - 🎨 **Clean UI**: Organized layout with smooth hover effects and professional styling.
 
-## 🧰 Tech Stack
+## 🛠️ Tech Stack
 
 - **HTML5**
 - **CSS3** (with responsive design)
