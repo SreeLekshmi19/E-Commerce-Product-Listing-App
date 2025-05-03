@@ -18,10 +18,15 @@ handleResize();
 // Recheck on window resize
 window.addEventListener("resize", handleResize);
 
-// Toggle on mobile only (no auto-focus)
+// Toggle on mobile only
 menuToggle.addEventListener("click", () => {
   if (window.innerWidth <= 768) {
     mobileControls.classList.toggle("hidden");
     mobileControls.classList.toggle("visible");
+
+    const searchInput = mobileControls.querySelector('input[type="search"]');
+    if (searchInput && mobileControls.classList.contains("visible")) {
+      setTimeout(() => searchInput.focus(), 100);
+    }
   }
 });
