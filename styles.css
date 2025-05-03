@@ -242,4 +242,8 @@ body {
     .hamburger {
         display: block;
     }
+
+    #mobile-controls.visible {
+        display: flex !important;
+    }
 }
