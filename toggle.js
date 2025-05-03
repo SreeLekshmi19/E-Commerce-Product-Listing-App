@@ -1,31 +1,34 @@
 const menuToggle = document.getElementById("menu-toggle");
 const mobileControls = document.getElementById("mobile-controls");
 
-// Initially show controls on desktop
 function handleResize() {
   if (window.innerWidth > 768) {
+    // Show controls on desktop
+    mobileControls.classList.remove("hidden");
     mobileControls.classList.add("visible");
   } else {
+    // Hide controls on mobile initially
     mobileControls.classList.add("hidden");
-    
+    mobileControls.classList.remove("visible");
   }
 }
 
-// Initial check
+// Initial check and on resize
 handleResize();
-
-// Recheck on window resize
 window.addEventListener("resize", handleResize);
 
-// Toggle on mobile only
+// Toggle controls on mobile when menu is clicked
 menuToggle.addEventListener("click", () => {
   if (window.innerWidth <= 768) {
-    mobileControls.classList.toggle("hidden");
-    mobileControls.classList.toggle("visible");
+    const isVisible = mobileControls.classList.toggle("visible");
+    mobileControls.classList.toggle("hidden", !isVisible);
 
-    const searchInput = mobileControls.querySelector('input[type="search"]');
-    if (searchInput && mobileControls.classList.contains("visible")) {
-      setTimeout(() => searchInput.focus(), 100);
+    // Auto-focus search input only after toggle shows it
+    if (isVisible) {
+      const searchInput = mobileControls.querySelector('input[type="search"]');
+      if (searchInput) {
+        setTimeout(() => searchInput.focus(), 100);
+      }
     }
   }
 });
