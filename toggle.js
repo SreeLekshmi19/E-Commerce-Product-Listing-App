@@ -4,7 +4,7 @@ const mobileControls = document.getElementById("mobile-controls");
 // Initially show controls on desktop
 function handleResize() {
   if (window.innerWidth > 768) {
-    mobileControls.classList.remove("hidden");
+    mobileControls.classList.add("hidden");
     mobileControls.classList.add("visible");
   }
 }
