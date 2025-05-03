@@ -6,7 +6,8 @@ function handleResize() {
   if (window.innerWidth > 768) {
     mobileControls.classList.add("visible");
   } else {
-    mobileControls.classList.add("visible");
+    mobileControls.classList.add("hidden");
+    
   }
 }
 
