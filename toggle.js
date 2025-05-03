@@ -7,7 +7,6 @@ function handleResize() {
     mobileControls.classList.add("visible");
   } else {
     mobileControls.classList.add("hidden");
-    mobileControls.classList.add("visible");
     const searchInput = mobileControls.querySelector('input[type="search"]');
     if (searchInput && mobileControls.classList.contains("visible")) {
       setTimeout(() => searchInput.focus(), 100);
