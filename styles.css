@@ -28,8 +28,6 @@ body {
 
 .visible {
     display: flex;
-    /* Or block, depending on your layout */
-    /* flex-direction: column; */
     gap: 10px;
 }
 
