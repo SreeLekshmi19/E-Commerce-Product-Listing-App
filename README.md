@@ -4,7 +4,6 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 ## 🔥 Features
 
-- ⏳ **Loading Screen**: Displays a loading message for 2 seconds before content appears.
 - 🔍 **Search Bar**: Search matches any word in the product title (case-insensitive).
 - 📂 **Category Filter**: View products by selected category.
 - 🛍️ **Cart System**:
@@ -18,7 +17,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 ## 🧰 Tech Stack
 
 - **HTML5**
-- **CSS3** (with responsive design & media queries)
+- **CSS3** (with responsive design)
 - **Vanilla JavaScript**
 - **[Fake Store API](https://fakestoreapi.com/)**
 
