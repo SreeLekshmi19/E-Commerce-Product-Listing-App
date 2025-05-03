@@ -5,10 +5,10 @@ function handleResize() {
   if (window.innerWidth > 768) {
     // Show on desktop
     mobileControls.classList.remove("hidden");
-    mobileControls.classList.add("flex"); // Or block, based on layout
+    mobileControls.classList.add("visible"); // Or block, based on layout
   } else {
     // Hide on mobile (only shown by toggle)
-    mobileControls.classList.remove("flex");
+    mobileControls.classList.remove("visible");
     mobileControls.classList.add("hidden");
   }
 }
@@ -26,14 +26,14 @@ menuToggle.addEventListener("click", () => {
 
     if (isHidden) {
       mobileControls.classList.remove("hidden");
-      mobileControls.classList.add("flex");
+      mobileControls.classList.add("visible");
 
       const searchInput = mobileControls.querySelector('input[type="search"]');
       if (searchInput) {
         setTimeout(() => searchInput.focus(), 100);
       }
     } else {
-      mobileControls.classList.remove("flex");
+      mobileControls.classList.remove("visible");
       mobileControls.classList.add("hidden");
     }
   }
