@@ -35,6 +35,15 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 ## 🤝 Getting Started
 
-**Clone the repository**
+1. **Fork the repository**
+2. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/product-listing-app.git
+   git clone https://github.com/your-username/E-Commerce-Product-Listing-App.git
+3. **Make your changes**
+4. **Commit and Push your changes**
+   ```bash
+   git add .
+   git commit -m "Your meaningful commit message"
+   git push origin main
+5. **Contribute**
+   If you'd like to contribute, feel free to create a pull request with your improvements.
