@@ -33,7 +33,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 🔗 [Visit the site](https://fetch-cart.netlify.app/)
 
-## 🤝 Getting Started
+## 🤝 Contributing
 
 1. **Fork the repository**
 2. **Clone the repository :**
