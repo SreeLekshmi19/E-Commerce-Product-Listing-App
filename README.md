@@ -2,9 +2,8 @@
 
 A sleek and responsive product listing website built using **HTML**, **CSS**, and **JavaScript**. This project features real product data from the [Fake Store API](https://fakestoreapi.com/) and includes dynamic search, category filtering, and a cart system. Designed to be professional and visually appealing, perfect for showcasing on LinkedIn or your portfolio.
 
-## 🔥 Features
+## 🚀 Features
 
-- ⏳ **Loading Screen**: Displays a loading message for 2 seconds before content appears.
 - 🔍 **Search Bar**: Search matches any word in the product title (case-insensitive).
 - 📂 **Category Filter**: View products by selected category.
 - 🛍️ **Cart System**:
@@ -15,14 +14,15 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
   - On mobile, search, filter, and cart options appear in a dropdown accessible via a hamburger menu.
 - 🎨 **Clean UI**: Organized layout with smooth hover effects and professional styling.
 
-## 🧰 Tech Stack
+## 🖥️ Tech Stack
 
 - **HTML5**
-- **CSS3** (with responsive design & media queries)
+- **CSS3** (with responsive design)
 - **Vanilla JavaScript**
+- **Local Storage**
 - **[Fake Store API](https://fakestoreapi.com/)**
 
-## 🧠 How It Works
+## 🛠️ How It Works
 
 - Products are fetched from the Fake Store API on page load.
 - Search input filters products if any word matches the title.
@@ -34,8 +34,17 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 🔗 [Visit the site](https://fetch-cart.netlify.app/)
 
-## 🚀 Getting Started
+## 🤝 Contributing
 
-**Clone the repository**
+1. **Fork the repository**
+2. **Clone the repository :**
    ```bash
-   git clone https://github.com/your-username/product-listing-app.git
+   git clone https://github.com/your-username/E-Commerce-Product-Listing-App.git
+3. **Make your changes**
+4. **Commit and Push your changes :**
+   ```bash
+   git add .
+   git commit -m "Your meaningful commit message"
+   git push origin main
+5. **Contribute :**
+   If you'd like to contribute, feel free to create a pull request with your improvements.
