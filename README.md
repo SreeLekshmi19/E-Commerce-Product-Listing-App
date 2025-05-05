@@ -6,6 +6,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 - [🚀 Features](#-features)
 - [🖥️ Tech Stack](#️-tech-stack)
+- [🛠️ How It Works](#-how-it-works)
 - [🌐 Live Demo](#-live-demo)
 - [🤝 Contributing](#-contributing)
 
