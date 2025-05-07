@@ -26,7 +26,7 @@ A sleek and responsive product listing website built using **HTML**, **CSS**, an
 
 - **HTML5**
 - **CSS3** (with responsive design)
-- **Vanilla JavaScript**
+- **JavaScript**
 - **Local Storage**
 - **[Fake Store API](https://fakestoreapi.com/)**
 
